@@ -20,7 +20,9 @@ body {
 
 .right-side {
     grid-area: right-side;
-    padding: 20px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-gap: 4px;
     background: #f2f2f2;
 }
 
@@ -34,6 +36,15 @@ body {
     background: url("../image/photo.jpg")no-repeat center;
     background-size: cover;
     min-height: 300px;
+}
+.left-section-content {
+    font-size: 17px;
+    font-family: "Noto Sans";
+    text-align: left;
+    text-transform: capitalize;
+    margin: 15px 0px;
+    padding-left: 30px;
+    color: white;
 }
 .left-section-title {
     font-size: 22px;
@@ -56,12 +67,32 @@ body {
 .hobbies {
     background-color: #e8c441;
 }
-.left-section-content {
+.right-section-content {
     font-size: 17px;
     font-family: "Noto Sans";
     text-align: left;
-    text-transform: capitalize;
-    margin: 15px 0px;
+    margin: 5px 0px;
     padding-left: 30px;
-    color: white;
+    color: #54534f;
 }
+.right-section-title {
+    font-size: 22px;
+    font-family: "Helvetica";
+    text-align: left;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin: 5px 0px;
+    padding: 5px 5px 5px 20px;
+    color: #3f3f3c;
+}
+.title {
+    text-decoration: none;
+}
+h5{
+    font-family: Roboto;
+}
+.code {
+    font-size: 12px;
+    font: italic;
+}
+
