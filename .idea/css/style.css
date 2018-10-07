@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    margin: 0 auto;
+    font-family: "Noto Sans", "Helvetica", "Arial", "Verdana", "Roboto", sans-serif;
+    max-width: 1024px;
+}
+
+.left-side {
+    grid-area: left-side;
+    display: grid;
+    background: #6c6f71;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+}
+
+.right-side {
+    grid-area: right-side;
+    padding: 20px;
+    background: #f2f2f2;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-template-areas: "left-side right-side";
+}
+
+.photo {
+    background: url("../image/photo.jpg")no-repeat center;
+    background-size: cover;
+    min-height: 300px;
+}
+.left-section-title {
+    font-size: 22px;
+    font-family: "Noto Sans";
+    text-align: left;
+    text-transform: uppercase;
+    margin: 15px 0px;
+    padding: 5px 5px 5px 30px;
+    color: white;
+}
+.contact {
+    background-color: #ec96ea;
+}
+.languages {
+    background-color: #b6de8e;
+}
+.skills {
+    background-color: #64adae;
+}
+.hobbies {
+    background-color: #e8c441;
+}
+.left-section-content {
+    font-size: 17px;
+    font-family: "Noto Sans";
+    text-align: left;
+    text-transform: capitalize;
+    margin: 15px 0px;
+    padding-left: 30px;
+    color: white;
+}
