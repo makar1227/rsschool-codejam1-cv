@@ -19,11 +19,12 @@
         </div>
         <div class="left-side-section">
             <div class="left-section-title languages">Languages</div>
-            <div class="left-section-content information">English: B1<br> German: A2<br></div>
+            <div class="left-section-content information">English: B1<br> German: A2</div>
         </div>
         <div class="left-side-section">
             <div class="left-section-title skills">Skills</div>
-            <div class="left-section-content information">Java, Spring, Testng SQl, HTML, Css<br>Jira, Jenkins, Maven </div>
+            <div class="left-section-content information">Java, Spring, TestNG, SQL, HTML, Css, Appium, <br>Jira, Jenkins, Maven
+            </div>
         </div>
         <div class="left-side-section">
             <div class="left-section-title hobbies">Hobbies</div>
@@ -32,13 +33,78 @@
 
     </div>
     <div class="right-side">
+        <div class="right-section-title title">
+            <h2 class="title">
+                Volha Makarevich
+            </h2>
+            <h5 class="subtitle">
+                Java Script junior developer
+            </h5>
+        </div>
+        <div class="right-side-section">
+            <div class="right-section-title">Summary</div>
+            <div class="right-section-content summary">I'm an experienced IT professional with a background in Application support and Implementation, QA and Testing automation, IT Process management.</div>
+        </div>
+        <div class="right-side-section">
+            <div class="right-section-title">Education</div>
+            <div class="right-section-content education">
+                <ul>
+                    <li>EPAM Training Center: <b>Java web</b></li>
+                    <li>School of Business and Management of Technology of BSU: <b>Software engineer</b></li>
+                    <li>European Humanities University: <b>Visual culture</b></li>
+                        <li>Universität Passau (Germany), Erasmus program (September 2014 –  July 2015)<br>
+                            <b>Faculty of Arts and Humanities</b></li>
+                    <li>Belarusian National Technical Universit: <b>Construction and Maintenance of Roads</b></li>
+                </ul>
+            </div>
+        </div>
+        <div class="right-side-section">
+            <div class="right-section-title">Work experience</div>
+            <div class="right-section-content experience">Test Automation Engineer at EPAM Systems since september 2017
+            </div>
+        </div>
+        <div class="right-side-section">
+            <div class="right-section-title ">Code example</div>
+            <div class="right-section-content code">
+                <pre>import {setRightResult, setLanguage, setWord} from "./tasks.js";
+                import {taskDescription} from "./tasks";
 
+                export const listeningTask = () => {
+                document.getElementById('myModal').style.display = "none";
+                document.getElementById('play').style.display = "flex";
+                const start = () => {
+                fetch('https://api.myjson.com/bins/yfmxi')
+                .then(res => res.json())
+                .then(response => {
+                setTask(response)
+                })
+                .then(respon => {
+                document.getElementById('taskModal').style.display = "grid";
+                document.getElementById('input').style.display = "grid";
+                })
+                };
+                start();
+                };
+
+                const setTask = (response) => {
+                let map = new Map();
+                Object.keys(response).forEach(key => {
+                map.set(key, response[key]);
+                });
+                const index = _.random(0, map.size - 1);
+                let question = Array.from(map.keys())[index];
+                document.getElementById('description').innerHTML = taskDescription[3];
+
+                setRightResult(question);
+                setLanguage("en-US");
+                setWord(question);
+                };
+                </pre>
+            </div>
+        </div>
+        </h2>
     </div>
 </div>
-
-
-</div>
-
 
 </body>
 </html>
